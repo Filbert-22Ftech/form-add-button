@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>OPD Registration</title>
+    <!-- Created by Anuj Raj -->
+  </head>
+  <body>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Doctor</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Department</label>
+            <input type="department" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <form>
+    <div class="container">
+        <div class="row dark">
+          <div class="col-md-12"><h1 style="text-align:center">OPD Registration</h1></div>
+        </div>
+        <br />
+        <hr />
+        <div class="row">
+            <div class="col-md-1">UHID</div>
+            <div class="col-md-2">
+            <input type="UHID" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter UHID">
+            </div>
+
+            <div class="col-md-1">Date</div>
+            <div class="col-md-2">
+            <input type="Date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Date">
+            </div>
+
+            <div class="col-md-1">Time</div>
+            <div class="col-md-2">
+            <input type="Time" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Time">
+            </div>
+            
+            <div class="col-md-1">Username</div>
+            <div class="col-md-2">
+            <input type="Username" name="username" class="form-control" placeholder="Enter Username">
+            </div>
+        </div>
+        <br/>
+
+        <div class="row">
+            <div class="col-md-1">NAME</div>
+            <div class="col-md-5">
+             <input type="NAME" name="Name" class="form-control" placeholder="Enter NAME">
+            </div>
+
+            <div class="col-md-1">Age</div>
+            <div class="col-md-2">
+             <input type="Age" name="Age" class="form-control" placeholder="Enter Age">
+            </div>
+
+            <div class="col-md-1">Gender</div>
+            <div class="col-md-2">
+              <select class="form-control form-control-md">
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+        </div>
+    <br/>
+        <div class="row">
+            <div class="col-md-1">Guardin</div>
+            <div class="col-md-5">
+             <input type="Guardin" name="Guardin"class="form-control" placeholder="Enter Guardin">
+            </div>
+
+            <div class="col-md-1">Addresss</div>
+            <div class="col-md-5">
+             <input type="email" name="Addresss" class="form-control" placeholder="Enter Addresss">
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-1">Doctor</div>
+            <div class="col-md-4">
+             <input type="Doctor" name="Doctor" class="form-control" placeholder="Enter Doctor">
+            </div>
+
+            <div class="col-md-1 ">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#add">Add</button>
+            </div>
+
+            <div class="col-md-1">Mob.No.</div>
+            <div class="col-md-5">
+             <input type="Mob.No." name="mob Mob.No." class="form-control" placeholder="Enter Mob.No.">
+            </div>
+        </div>
+        <br/>
+
+        <div class="row">
+            <div class="col-md-1">Department</div>
+            <div class="col-md-5">
+             <input type="Department" name="Department" class="form-control" placeholder="Enter Department">
+            </div>
+
+            <div class="col-md-1">City</div>
+            <div class="col-md-5">
+             <input type="City" name="City" class="form-control" placeholder="Enter City">
+            </div>
+        </div>
+        <br/>
+
+
+        <div class="row">
+            <div class="col-md-1">Refrence By</div>
+            <div class="col-md-5">
+             <input type="Refrence By" name="Refrence By" class="form-control" placeholder="Enter Refrence By">
+            </div>
+
+            <div class="col-md-1">State</div>
+            <div class="col-md-5">
+              <select id="inputState" class="form-control">
+                <option selected>Choose</option>
+                <option>Jaipur</option>
+                <option>UK</option>
+              </select>
+            </div>
+        </div>
+        <br/>
+
+
+        <div class="row">
+          <div class="col-md-1">Reason</div>
+          <div class="col-md-5">
+           <input type="Reason" name="Reason" class="form-control" placeholder="Enter Refrence By">
+          </div>
+
+          <div class="col-md-1">Pin Code</div>
+          <div class="col-md-5">
+           <input type="State" name="Pin Code" class="form-control" placeholder="Enter State">
+          </div>
+      </div>
+      <br/>
+        <div class="row">
+            <div class="col-md-1">Fees</div>
+            <div class="col-md-3">
+             <input type="Fees"name="Fees" class="form-control"placeholder="Enter Fees">
+            </div>
+
+            <div class="col-md-1">Weight</div>
+            <div class="col-md-1">
+             <input type="Weight" name="Weight" class="form-control" placeholder="Enter Weight">
+            </div>
+
+            <div class="col-md-1">BP</div>
+            <div class="col-md-1">
+             <input type="Bp" name="BP" class="form-control" placeholder="Bp">
+            </div>
+
+            <div class="col-md-1">Temp</div>
+            <div class="col-md-1">
+             <input type="Temp" name="Temp" class="form-control" placeholder="Temp">
+            </div>
+
+            <div class="col-md-1">Blood Gp</div>
+            <div class="col-md-1">
+             <input type="blood gp" name="Blood"class="form-control" placeholder="Blood">
+            </div>
+        </div>
+        <br/>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">&nbsp</div>
+            <div class="col-md-2"><button type="button" class="btn btn-success" width="100%">Save & OPD BILLS</button></div>
+            <div class="col-md-2"><button type="button" class="btn btn-danger" width="100%">Close</button></div>
+            <div class="col-md-4">&nbsp</div>
+        </div>
+      </div>
+    </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
